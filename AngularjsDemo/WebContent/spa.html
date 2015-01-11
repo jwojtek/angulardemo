@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="spaDemo">
+<head>
+<meta charset="UTF-8">
+<title>Angular Rest</title>
+<script type="text/javascript" src="./js/angular.min.js"></script>
+<script type="text/javascript" src="./js/mycontroller.js"></script>
+
+</head>
+
+<body ng-controller="PersonCtrl">
+	<p>Imię: <input type="text" ng-model="imie"> </p>
+	<p>Imie: {{imie}}</p>
+	<p>Nick: {{nickname}}</p>
+
+	<ul>
+		<li ng-repeat="person in persons">
+		{{person.firstname}}
+		
+		
+		</li>
+	
+	
+	
+	
+	</ul>
+
+
+
+
+
+
+
+</body>
+</html>
